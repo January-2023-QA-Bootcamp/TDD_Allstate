@@ -1,0 +1,155 @@
+Automation Testing Background:
+Automation Benefits:
+* Reusable, Repeatable
+* Without human intaraction
+* Tools / Codes
+* Validation Against requirements
+* Save times
+* Execute during off hours
+
+Testing:
+* Validating requiremnets
+
+PI - 3-4 months
+6 (EPICs)
+100 Requiremnts (User Stories)
+Product Backlog
+Team 1, Team 2, Team 3, Team 4
+20 		25 		30		25
+Sprint Backlog
+
+SDLC: (Software Development Life Cycle) - Agaile : Sprint (2-3 weeks)
+1. Requirement Analysis (Sprint Grooming & Planning) csr-123, csr-345, csr-444
+2. Design (Design Test Strategy (Test Plan, Test Cases, RTM))
+3. Development (Develop Test Scripts)
+4. Testing - Manual -> Automation
+5. Release & Maiantance
+
+STLC: (Software Testing Lifecycle)
+1. Design Test Strategy
+2. Test Cases
+3. RTM (Requirement Tracablitiy Matrix)
+4. Test Execution
+5. Test Results
+6. Sign - off
+
+Sprint Team:
+* Product Owner
+* Scrum Master
+* Teams (BA, DEV, QA)
+
+Sprint Ceremonies:
+* Sprint Grooming (Groom Sprint Backlog to pick requirement for upcoming sprint)
+* Sprint Planning (Stroy Points, Test Estimation + Dev Estimation)
+* Sprint Demo (DEV and QA)
+* Sprint Review
+* Sprint Retrospective
+* Daily Stand Up (What you did yesterday, What you are planning to do today, is there any bugs/empediments/block)
+
+Environments:
+* PROD (Production) existing / new product is comming www.amazon.com (No Tests)
+* STG (Production Like Environment) www.amzon-stg.com (E3)
+* UAT (User Acceptance Test) BA www.amazon-uat.com
+* QA (Certify) QA www.amazon-qa.com (E2, HYBB, Golden-Dev)
+* DEV (Developmental Phase) DEV www.amazon-dev.com (E1, Blue-FO)
+
+Testing Catagory:
+Functional Tests:
+	1. Unit Tests
+	2. Integration Tests
+Non-Fuctional Tests:
+	1. Performance (Load Runner, JMeter, K6, Gatling)
+		a. Load Testing (SLA - Service Level Agrement) 1000/m (3000m)
+		b. Strees Testing 1200/m -1%, 1500/m - 5% .... 2500/m -100% (Breaking Point of the Server/Computer)
+		c. Spike Tests (1500/m)
+		d. Endurance
+	2. Security
+	3. UX - User Experience
+	4. UI - User Interface
+	5. 508 Compilance Testing
+	6. Network Test
+
+Testing Approaches:
+1. Black Box Testing - QA Automation is a 3rd party
+2. Grey Box Testing - Some tests depends on actual application
+3. White Box Testing - Dev's unit and integration tests
+
+Manual Test Case :
+Validate Login Fucntionalities
+- Goto the <homePage> url
+- Search for iphone 14
+- Validate the list more than 10 items
+
+Automation Pre-Req:
+1. Repeatable, Re-use
+2. Resources - Time, Skillset, Tools
+3. Helps in longer run
+
+Automation Testing:
+1. Automation Strategy (in-sprint)
+2. Automation Tools
+3. Automation Demo (POC)
+
+Automation Framework:
+1. TDD - Test Driven Development
+2. BDD - Behabiour Driven Development
+3. Linear Scripting
+4. MDD - Modular Driven Development
+5. KDD - Key Word Driven Development
+6. DDD - Data Driven Development
+7. Hybrid
+
+Design Patterns:
+1. Creational  - Page Object Model
+2. Behavioural - Singleton
+3. Structural - Builder
+
+Automation Test Case :
+Validate Login Fucntionalities
+- Goto the <homePage> url
+- Click Search bar
+- Insert 'iPhone14'
+- Click search
+- Assert item count
+
+ALLSTATE TDD:
+- src
+	- main
+		- java
+			- base
+				- TestBase
+			- common
+				- CommonAction
+				- CommonWait
+			- util
+				- ExcelUtils
+				- JDBCUtils
+				- Configuration
+			- reporting
+				- ExtentReport
+				- Log
+		- resources
+			- configuration.properties
+	- test
+		- java
+			- auto
+				- AutoTest
+		- resources
+			- Test Data
+
+- testrunner.xml
+- pom.xml
+	- selenium
+	- testng
+	- webdrivermanger
+	- apache poi - excel
+	- ojdbc/mysqlconnector/postgresql driver - jdbc
+	- extentreporting
+
+Maven Lifecycle:
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+Next Class:
+- Project Structure in GitHub
+- Project Structure
+
