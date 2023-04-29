@@ -1,7 +1,7 @@
 Automation Testing Background:
 Automation Benefits:
 * Reusable, Repeatable
-* Without human intaraction
+* Without human intarection
 * Tools / Codes
 * Validation Against requirements
 * Save times
@@ -47,7 +47,7 @@ Sprint Ceremonies:
 * Daily Stand Up (What you did yesterday, What you are planning to do today, is there any bugs/empediments/block)
 
 Environments:
-* PROD (Production) existing / new product is comming www.amazon.com (No Tests)
+* PROD (Production) existing / new product is coming www.amazon.com (No Tests)
 * STG (Production Like Environment) www.amzon-stg.com (E3)
 * UAT (User Acceptance Test) BA www.amazon-uat.com
 * QA (Certify) QA www.amazon-qa.com (E2, HYBB, Golden-Dev)
@@ -105,7 +105,7 @@ Design Patterns:
 3. Structural - Builder
 
 Automation Test Case :
-Validate Login Fucntionalities
+Validate Login Functionalities
 - Goto the <homePage> url
 - Click Search bar
 - Insert 'iPhone14'
@@ -121,6 +121,9 @@ ALLSTATE TDD:
 			- common
 				- CommonAction
 				- CommonWait
+			- objects
+				- HomePage
+				- CarPage
 			- util
 				- ExcelUtils
 				- JDBCUtils

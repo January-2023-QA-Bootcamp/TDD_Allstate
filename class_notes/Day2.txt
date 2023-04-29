@@ -1,0 +1,5 @@
+XPath = Xml Query Language
+
+Exceptions:
+Checked Exception enforce to handle the exception in compile time. IOException
+Unchecked Exception do not enforce in compile time but runtime exception occurs. NullPointerException
