@@ -9,7 +9,9 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import object.DriverDetails;
 import object.HomePage;
+import object.InfoPage;
 import util.Configuration;
 import util.Key;
 import static util.Key.*;
@@ -19,6 +21,8 @@ public class TestBase {
 
 	protected WebDriver driver;
 	protected HomePage homePage;
+	protected InfoPage infoPage;
+	protected DriverDetails driverDetails;
 	Configuration conf = new Configuration();
 	
 	@BeforeMethod
@@ -60,6 +64,8 @@ public class TestBase {
 	
 	public void initObject() {
 		homePage = new HomePage(driver);
+		infoPage = new InfoPage(driver);
+		driverDetails = new DriverDetails(driver);
 	}
 	
 	@AfterMethod

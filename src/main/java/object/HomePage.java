@@ -3,21 +3,34 @@ package object;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-import common.CommonAction;
+import static org.testng.Assert.*;
+import static org.openqa.selenium.support.PageFactory.*;
+import static common.CommonAction.*;
 
 public class HomePage {
 
 	public HomePage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+		initElements(driver, this);
 	}
 	
-	@FindBy(xpath = "//span[@class='mr-2']")
+	@FindBy(tagName = "h1")
 	WebElement getAQuoteTitle;
 	
-	public void getAQuoteTitleValidation() {
-		String titleString = CommonAction.getInnerHTML(getAQuoteTitle);
-		System.out.println(titleString);
+	@FindBy(xpath = "(//button[text()='Get a Free Quote'])[1]")
+	WebElement getQuoteBtn;
+	
+	@FindBy(id = "free-quote-zip")
+	WebElement zipCodeFld;
+	
+	public void getAQuoteTitleValidation(String expected) {
+		assertEquals(getInnerHTML(getAQuoteTitle), expected);
+	}
+	
+	public void clickGetQuoteBtn() {
+		click(getQuoteBtn);
+	}
+	
+	public void insertZipCode(String zip) {
+		insert(zipCodeFld, zip);
 	}
 }
