@@ -5,13 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
+import static common.CommonWait.*;
 import static common.CommonAction.*;
 
 public class InfoPage {
 
 	public InfoPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		init(driver);
 	}
 	
 	@FindBy(xpath = "//div[@class='page-header']/child::h3")
@@ -49,6 +50,7 @@ public class InfoPage {
 	}
 	
 	public void validateError(String expected) {
+		waitUntilVisible(alertError);
 		Assert.assertEquals(getText(alertError), expected);
 	}
 	
