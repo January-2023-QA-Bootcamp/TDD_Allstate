@@ -26,6 +26,6 @@ public class Configuration {
 	}
 	
 	public int readPropNum(String key) {
-		return Integer.parseInt(readProp(key));
+		return Integer.parseInt(readProp(key.trim()));
 	}
 }

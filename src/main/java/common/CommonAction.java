@@ -28,6 +28,12 @@ public class CommonAction {
 		Log.log(element + " <<< value inserted : " + text);
 	}
 	
+	public static void insert(WebElement element, char text) {
+		String temp = String.valueOf(text);
+		element.sendKeys(temp);
+		Log.log(element + " <<< value inserted : " + text);
+	}
+	
 	public static void dropdown(WebElement element, String value) {
 		Select select = new Select(element);
 		select.selectByVisibleText(value);

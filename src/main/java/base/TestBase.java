@@ -62,7 +62,7 @@ public class TestBase {
 		}
 	}
 	
-	public void initObject() {
+	protected void initObject() {
 		homePage = new HomePage(driver);
 		infoPage = new InfoPage(driver);
 		driverDetails = new DriverDetails(driver);
