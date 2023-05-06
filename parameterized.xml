@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name = "browser" value = "firefox"></parameter>
+  <test thread-count="5" name="Test">
+  <parameter name = "quoteTitle1" 	 value = "Car insurance with flexible payment options."/>
+  <parameter name = "zipCode1" 		 value = "54113"/>
+  <parameter name = "infoTitle1" 	 value = "General Info"/>
+  <parameter name = "liab5Yrs1" 	 value = "No"/>
+  <parameter name = "ownOrRent1" 	 value = "Rent"/>
+  <parameter name = "emailErrorMsg1" value = "Please provide a valid email address."/>
+  <parameter name = "email1" 		 value = "john.doe@test.com"/>
+  <parameter name = "driverTtitle1"  value = "Driver 1 (Named Insured) Information"/>
+    <classes>
+      <class name="auto.ParameterizedTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

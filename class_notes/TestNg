@@ -1,0 +1,14 @@
+TestNG Hierechy
+
+- @BeforeSuite
+- @BeforeTest
+- @BeforeGroup
+- @BeforeClass
+- @BeforeMethod
+- @Test
+- @AfterMethod
+- @AfterClass
+- @AfterGroup
+- @AfterTest
+- @AfterSuite
+
