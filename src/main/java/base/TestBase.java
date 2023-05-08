@@ -1,5 +1,7 @@
 package base;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.lang.reflect.Method;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
@@ -77,17 +79,26 @@ public class TestBase extends ExtentReportListner{
 		driverDetails = new DriverDetails(driver);
 	}
 
+	private String getStackTrace(Throwable t) {
+		StringWriter sw = new StringWriter();
+		PrintWriter pw = new PrintWriter(sw);
+		t.printStackTrace(pw);
+		return sw.toString();
+	}
+	
 	@AfterMethod
 	public void aftereEachTest(ITestResult result, Method method) {
 		for(String group : result.getMethod().getGroups()) {
 			ExtentReport.getTest().assignCategory(group);
 		}
+		
 		if(result.getStatus() == ITestResult.SUCCESS) {
 			ExtentReport.getTest().log(Status.INFO, "Test Passed");
 		}else if(result.getStatus() == ITestResult.SKIP) {
 			ExtentReport.getTest().log(Status.SKIP, "Test Skipped");
 		}else if(result.getStatus() == ITestResult.FAILURE) {
 			ExtentReport.getTest().log(Status.FAIL, "Test Failed");
+			ExtentReport.getTest().log(Status.FAIL, getStackTrace(result.getThrowable()));
 			ExtentReport.getTest().addScreenCaptureFromPath(captureScreenShot(method, driver));
 		}
 	}
