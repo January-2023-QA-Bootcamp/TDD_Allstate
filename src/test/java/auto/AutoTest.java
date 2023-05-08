@@ -5,7 +5,7 @@ import base.TestBase;
 
 public class AutoTest extends TestBase{
 
-	@Test
+	@Test(groups = {"auto", "regression", "smoke"})
 	public void getA_Quote() {
 		homePage.getAQuoteTitleValidation("Car insurance with flexible payment options.");
 		homePage.insertZipCode("54114");

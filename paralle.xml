@@ -5,12 +5,14 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="auto.AutoTest" />
+			<!-- class name="auto.FailedTest"/-->
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="EdgeTest">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="auto.AutoTest" />
+			<!-- class name="auto.FailedTest"/-->
 		</classes>
 	</test>
 </suite> <!-- Suite -->

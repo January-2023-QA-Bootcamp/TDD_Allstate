@@ -1,0 +1,18 @@
+Ques:
+Packages:
+src/main
+- base
+- common
+- util
+- reporting
+- object
+src/test - 10 tests passed
+- auto
+- home
+resources
+- config.properties
+pom.xml
+- selenium
+- testng
+- webdrivermanager
+- maven compiler

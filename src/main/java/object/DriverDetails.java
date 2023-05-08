@@ -40,7 +40,7 @@ public class DriverDetails {
 	WebElement continueBtn;
 	
 	public void validateTitle(String expected) {
-		waitUntilVisible(title);
+		waitUntilVisible(firstName);
 		Assert.assertEquals(getText(title), expected);
 	}
 	
