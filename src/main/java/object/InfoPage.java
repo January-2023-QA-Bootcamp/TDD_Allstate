@@ -21,6 +21,9 @@ public class InfoPage {
 	@FindBy(id = "piLapseDays")
 	WebElement last_5_yrs_liability;
 	
+	@FindBy(xpath = "//input[@id='autoInsurance_99']/following-sibling::label")
+	WebElement noLiabIn5Yrs;
+	
 	@FindBy(id = "ownsHomeFlag")
 	WebElement ownsHomeFlag;
 	
@@ -38,7 +41,10 @@ public class InfoPage {
 	}
 	
 	public void select_last_5_yrs_liability(String value) {
-		dropdown(last_5_yrs_liability, value);
+		//dropdown(last_5_yrs_liability, value);
+		if(value.equalsIgnoreCase("no")) {
+			click(noLiabIn5Yrs);
+		}
 	}
 	
 	public void selectOwnsHomeFlag(String ownsHomeValue) {
