@@ -16,6 +16,7 @@ public class Configuration {
 			properties = new Properties();
 			InputStream iStream = getClass().getClassLoader().getResourceAsStream("configuration.properties");
 			properties.load(iStream);
+			iStream.close();
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
