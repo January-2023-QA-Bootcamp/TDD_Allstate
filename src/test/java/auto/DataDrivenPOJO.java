@@ -18,12 +18,21 @@ public class DataDrivenPOJO extends TestBase{
 			"Rent", "Please provide a valid email address.", "john6.doe@test.com", "Driver 1 (Named Insured) Information");
 	
 	@DataProvider(name = "autoData")
-	public Iterator<AutoData> getData(){
+	public Iterator<AutoData> getDataIterator(){
 		List<AutoData> list = new ArrayList<>();
 		list.add(set1);
 		list.add(set2);
 		list.add(set3);
 		return list.iterator();
+	}
+	
+	@DataProvider(name = "autoDataArray")
+	public Object[][] getDataArray(){
+		Object [][] objects = new Object[3][1];
+		objects[0] = new Object[] {set1};
+		objects[1] = new Object[] {set2};
+		objects[2] = new Object[] {set3};
+		return objects;
 	}
 	
 	@Test(enabled = true, dataProvider = "autoData")
