@@ -5,7 +5,8 @@
     <classes>
       <!--class name="auto.DataDrivenTest"/-->
       <!--class name="auto.DataDrivenPOJO"/-->
-      <class name="auto.DataDrivenJDBC"/>
+      <!--class name="auto.DataDrivenJDBC"/-->
+      <class name="auto.DataDrivenExcel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

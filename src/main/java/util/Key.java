@@ -2,5 +2,5 @@ package util;
 
 public enum Key {
 
-	browser, pageLoad, implicitLoad, explicitWait, url
+	browser, pageLoad, implicitLoad, explicitWait, url, excelFile, excelSheet
 }

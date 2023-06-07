@@ -31,7 +31,7 @@ public class TestBase extends ExtentReportListner{
 	protected HomePage homePage;
 	protected InfoPage infoPage;
 	protected DriverDetails driverDetails;
-	Configuration conf = new Configuration();
+	protected Configuration conf = new Configuration();
 
 	@Parameters("browser")
 	@BeforeMethod
