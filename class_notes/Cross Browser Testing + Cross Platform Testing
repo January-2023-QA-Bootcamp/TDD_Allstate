@@ -1,0 +1,22 @@
+Cross Browser Testing + Cross Platform Testing
+
+Browsers: HTML5
+- Chrome 114, 113, 111
+- Edge 110, 109, 108
+- Firefox
+- Safari
+
+Platforms:
+- Windows
+- Mac
+- Linux
+- iOS (Swift)
+- Android (Kotlin)
+
+Browserstack / Saucelab / Lambdatest / Perfecto
+VM + RTM
+Web + Mobile
+
+iPhone 13 Pro Max (iOS 16, iOS 15, iOS 14), 13 Pro, 13 S
+iPhone 14, iPhone 13, 12, 11
+Samsumng Note 23, 22, 21

@@ -1,11 +1,10 @@
 package misc;
 
+import org.testng.annotations.Test;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.Date;
-
-import org.testng.annotations.Test;
 import util.Configuration;
 
 public class UnitTests {

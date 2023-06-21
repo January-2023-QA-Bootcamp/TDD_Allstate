@@ -72,7 +72,7 @@
 				<version>3.0.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>regression_suite.xml</suiteXmlFile>
+						<suiteXmlFile>${suite}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

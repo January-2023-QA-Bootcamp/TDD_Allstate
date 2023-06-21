@@ -1,14 +1,12 @@
 package misc;
 
+import org.testng.annotations.Test;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import org.testng.annotations.Test;
-
 import util.data.JDBCUtil;
 
 public class JDBCTest {
@@ -32,6 +30,7 @@ public class JDBCTest {
 		}
 	}
 	
+	@Test
 	public static Object[][] testJDBC() throws ClassNotFoundException, SQLException {
 		Object[][] objects;
 		Class.forName("org.postgresql.Driver");

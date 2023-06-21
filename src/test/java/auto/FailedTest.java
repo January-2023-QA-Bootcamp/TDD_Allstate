@@ -1,7 +1,7 @@
 package auto;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import base.TestBase;
 
 public class FailedTest extends TestBase{
@@ -17,6 +17,6 @@ public class FailedTest extends TestBase{
 		infoPage.clickContinue();
 		infoPage.validateError("Please provide a valid email address.");
 		infoPage.insertEmail("test@test.com");
-		Assert.fail();
+		AssertJUnit.fail();
 	}
 }

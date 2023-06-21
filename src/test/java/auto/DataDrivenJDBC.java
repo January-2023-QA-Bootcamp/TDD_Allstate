@@ -1,8 +1,7 @@
 package auto;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+import org.testng.annotations.DataProvider;
 import base.TestBase;
 import util.data.AutoData;
 import util.data.JDBCUtil;

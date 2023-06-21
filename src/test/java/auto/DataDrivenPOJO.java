@@ -1,10 +1,10 @@
 package auto;
 
+import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import base.TestBase;
 import util.data.AutoData;
 

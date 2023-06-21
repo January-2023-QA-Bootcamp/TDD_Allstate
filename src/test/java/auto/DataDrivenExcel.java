@@ -1,10 +1,10 @@
 package auto;
 
+import org.testng.annotations.Test;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import base.TestBase;
 import static util.Key.*;
 import util.data.ExcelUtils;
